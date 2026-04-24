@@ -1,0 +1,42 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Java / Maven
+Movie/target/
+Movie/.idea/
+Movie/.vscode/
+Movie/*.log
+
+# Node / Vite
+client/node_modules/
+client/dist/
+client/dist-ssr/
+client/coverage/
+client/*.local
+client/.idea/
+client/.vscode/
+client/*.tsbuildinfo
+
+# Test artifacts
+client/cypress/videos/
+client/cypress/screenshots/

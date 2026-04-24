@@ -1,0 +1,31 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: movie
+  data:
+    redis:
+      host: localhost
+      password: ''
+      port: 6379
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123456
+    url: jdbc:mysql://localhost:3306/movie
+    username: root
+  web:
+    resources:
+      static-locations:
+        - classpath:/static/
+        - classpath:/video/
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath*:mapper/**/*.xml
+  type-aliases-package: com.movie.entity
+
+jwt:
+  secret: 7A24432646294A404E635266556A586E3272357538782F413F4428472D4B6150
+
